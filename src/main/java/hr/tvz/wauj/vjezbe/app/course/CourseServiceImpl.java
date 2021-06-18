@@ -1,3 +1,4 @@
+/*
 
 package hr.tvz.wauj.vjezbe.app.course;
 
@@ -72,3 +73,4 @@ class CourseServiceImpl implements CourseService {
 
 }
 
+*/
