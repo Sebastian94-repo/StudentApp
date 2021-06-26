@@ -60,8 +60,8 @@ class CourseServiceImpl implements CourseService {
     }
 
     @Override
-    public void deleteByName(final String name) {
-       courseRepository.deleteByName(name);
+    public void deleteByID(final String ID) {
+       courseRepository.deleteByID(ID);
     }
 
     private Course mapCommandToCourse(final CourseCommand courseCommand) {

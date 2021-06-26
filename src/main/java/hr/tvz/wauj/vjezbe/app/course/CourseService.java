@@ -14,5 +14,6 @@ public interface CourseService {
 
     Optional<CourseDTO> update(String id, CourseCommand updatedCourseCommand);
 
-    void deleteByName(String Name);
+    void deleteByID(String ID);
+
 }
