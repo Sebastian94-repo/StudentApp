@@ -24,4 +24,7 @@ public class CourseCommand {
     public Integer getNumberOfECTS() {
         return numberOfECTS;
     }
+
+    public CourseCommand() {
+    }
 }

@@ -32,6 +32,7 @@ class StudentServiceImpl implements StudentService {
     }
 
     @Override
+    // zero returns first element of the list
     public Optional<StudentDTO> findByJmbag(final String JMBAG) {
         Student student = studentRepository.findByJmbag(JMBAG).get(0);
         if (student == null) {

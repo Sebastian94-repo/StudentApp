@@ -1,4 +1,3 @@
-/*
 
 package hr.tvz.wauj.vjezbe.app.course;
 
@@ -30,7 +29,7 @@ class CourseServiceImpl implements CourseService {
 
     @Override
     public Optional<CourseDTO> findByName(final String name) {
-       Course course = courseRepository.findByName(name).get(0);
+       Course course = courseRepository.findByName(name).get();
         if (course == null) {
             return Optional.empty();
         } else {
@@ -39,11 +38,15 @@ class CourseServiceImpl implements CourseService {
         }
     }
 
+    @Override
+    public Optional<CourseDTO> findByID(int ID) {
+        return Optional.empty();
+    }
 
 
     @Override
     public Optional<CourseDTO> save(final CourseCommand courseCommand) {
-     Course course = courseRepository.save(mapCommandToCourse(courseCommand));
+     Course course = courseRepository.save(mapCommandToCourse(courseCommand)).get();
 
         CourseDTO courseDTO = mapCourseToDTO(course);
         return Optional.of(courseDTO);
@@ -73,4 +76,3 @@ class CourseServiceImpl implements CourseService {
 
 }
 
-*/

@@ -14,10 +14,16 @@ public class CourseDTO{
 
     }
 
+    public CourseDTO() {
+    }
+
     public String getName() {
         return name;
     }
 
+    public Integer getNumberOfECTS() {
+        return numberOfECTS;
+    }
 
     @Override
     public String toString() {
