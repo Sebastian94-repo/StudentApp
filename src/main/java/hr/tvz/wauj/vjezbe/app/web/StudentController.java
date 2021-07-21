@@ -5,6 +5,7 @@ import hr.tvz.wauj.vjezbe.app.student.StudentDTO;
 import hr.tvz.wauj.vjezbe.app.student.StudentService;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.web.bind.annotation.*;
 
 import javax.validation.Valid;
@@ -35,7 +36,7 @@ public class StudentController {
                         () -> ResponseEntity.notFound().build()
                 );
     }
-    
+    @Secured("ROLE_ADMIN")
     @PostMapping
     public ResponseEntity<StudentDTO> save(@Valid @RequestBody final StudentCommand command){
         return studentService.save(command)
@@ -50,7 +51,8 @@ public class StudentController {
                                 .build()
                 );
     }
-    
+
+    @Secured("ROLE_ADMIN")
     @PutMapping("/{JMBAG}")
     public ResponseEntity<StudentDTO> update(@PathVariable String JMBAG, @Valid @RequestBody final StudentCommand updateStudentCommand){
         return studentService.update(JMBAG, updateStudentCommand)
@@ -59,7 +61,8 @@ public class StudentController {
                         () -> ResponseEntity.notFound().build()
                 );
     }
-    
+
+    @Secured("ROLE_ADMIN")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     @DeleteMapping("/{JMBAG}")
     public void delete(@PathVariable String JMBAG){

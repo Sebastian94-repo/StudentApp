@@ -1,3 +1,4 @@
+/*
 package hr.tvz.wauj.vjezbe.app.course;
 
 import java.util.List;
@@ -17,3 +18,4 @@ public interface CourseService {
     void deleteByID(String ID);
 
 }
+*/

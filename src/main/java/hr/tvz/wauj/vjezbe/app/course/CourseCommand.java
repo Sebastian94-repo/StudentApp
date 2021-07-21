@@ -1,3 +1,4 @@
+/*
 package hr.tvz.wauj.vjezbe.app.course;
 
 
@@ -28,3 +29,4 @@ public class CourseCommand {
     public CourseCommand() {
     }
 }
+*/

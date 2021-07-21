@@ -1,10 +1,9 @@
+/*
 
 package hr.tvz.wauj.vjezbe.app.course;
 
 
-import hr.tvz.wauj.vjezbe.app.student.Student;
-import hr.tvz.wauj.vjezbe.app.student.StudentCommand;
-import hr.tvz.wauj.vjezbe.app.student.StudentDTO;
+
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -76,3 +75,4 @@ class CourseServiceImpl implements CourseService {
 
 }
 
+*/

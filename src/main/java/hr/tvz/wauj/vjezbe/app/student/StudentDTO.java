@@ -4,12 +4,17 @@ import java.time.LocalDate;
 
 public class StudentDTO {
     
+    private final String firstName;
+    private final String lastName;
     private final String jmbag;
     private final Integer numberOfECTS;
     private final boolean tuitionShouldBePaid;
     private final LocalDate dateOfBirth;
 
-    public StudentDTO(String jmbag, Integer numberOfECTS, boolean tuitionShouldBePaid, LocalDate dateOfBirth) {
+    public StudentDTO(String firstName, String lastName, String jmbag, Integer numberOfECTS, boolean tuitionShouldBePaid, LocalDate dateOfBirth) {
+
+        this.firstName = firstName;
+        this.lastName = lastName;
         this.jmbag = jmbag;
         this.numberOfECTS = numberOfECTS;
         this.tuitionShouldBePaid = tuitionShouldBePaid;

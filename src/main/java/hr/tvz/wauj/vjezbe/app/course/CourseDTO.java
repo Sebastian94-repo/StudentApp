@@ -1,3 +1,4 @@
+/*
 package hr.tvz.wauj.vjezbe.app.course;
 
 public class CourseDTO{
@@ -33,3 +34,4 @@ public class CourseDTO{
                 '}';
     }
 }
+*/

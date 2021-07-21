@@ -1,7 +1,10 @@
+/*
 package hr.tvz.wauj.vjezbe.app.course;
 
 import org.springframework.context.annotation.Primary;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
@@ -20,7 +23,9 @@ public interface CourseRepository {
 
     void deleteByID(String ID);
 
-      /*@Query("update Course s set s.id = ?1, s.name = ?2, s.numberOfECTS = ?3)
-    void update(String id, String name, String numberOfECTS);*/
+    @Modifying
+      @Query("update Course s set s.id = ?1, s.name = ?2, s.numberOfECTS = ?3")
+    void update(String id, String name, String numberOfECTS);
 
 }
+*/

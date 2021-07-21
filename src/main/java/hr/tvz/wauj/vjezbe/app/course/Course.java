@@ -1,3 +1,4 @@
+/*
 package hr.tvz.wauj.vjezbe.app.course;
 
 
@@ -51,3 +52,4 @@ public class Course {
         return Objects.hash(id, name, numberOfECTS, students);
     }
 }
+*/

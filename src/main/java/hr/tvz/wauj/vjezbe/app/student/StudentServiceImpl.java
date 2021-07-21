@@ -70,7 +70,7 @@ class StudentServiceImpl implements StudentService {
     }
 
     private StudentDTO mapStudentToDTO(final Student student) {
-        return new StudentDTO(student.getJmbag(), student.getNumberOfECTS(), shouldTuitionBePayed(student.getDateOfBirth()), student.getDateOfBirth());
+        return new StudentDTO(student.getFirstName(), student.getLastName(),student.getJmbag(), student.getNumberOfECTS(), shouldTuitionBePayed(student.getDateOfBirth()), student.getDateOfBirth());
     }
 
     private boolean shouldTuitionBePayed(LocalDate dateOfBirth) {

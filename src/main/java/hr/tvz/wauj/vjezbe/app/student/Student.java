@@ -1,6 +1,6 @@
 package hr.tvz.wauj.vjezbe.app.student;
 
-import hr.tvz.wauj.vjezbe.app.course.Course;
+// import hr.tvz.wauj.vjezbe.app.course.Course;
 
 
 import javax.persistence.*;
@@ -25,13 +25,14 @@ public class Student {
     @Column(name = "number_Of_ECTS")
     private Integer numberOfECTS;
 
-    @ManyToMany(targetEntity = Course.class)
+   /* @ManyToMany(targetEntity = Course.class)
     @JoinTable(
             name = "student_course",
             joinColumns = {@JoinColumn(name = "student_id")},
             inverseJoinColumns = {@JoinColumn(name ="course_id")}
     )
-    private List<Course> courses;
+
+    private List<Course> courses;*/
 
 
     public Student(String firstName, String lastName, String jmbag, LocalDate dateOfBirth, Integer numberOfECTS) {

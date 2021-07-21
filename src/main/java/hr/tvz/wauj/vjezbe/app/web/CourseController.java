@@ -1,3 +1,4 @@
+/*
 package hr.tvz.wauj.vjezbe.app.web;
 
 import hr.tvz.wauj.vjezbe.app.course.CourseDTO;
@@ -69,3 +70,4 @@ public class CourseController {
     }
 
 }
+*/
